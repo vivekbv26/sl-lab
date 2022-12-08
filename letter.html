@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Letter Surround</title>
+</head>
+<body>
+  <script>
+    function letterSurround(wrd){
+		var equal=0;
+    var plus=0;
+    if((wrd.charAt(0)>='a'&&wrd.charAt(0)<='z')||(wrd.charAt(0)>='A'&&wrd.charAt(0)<='Z'))
+				{
+					return false;
+				}	
+
+    else{
+			
+		for (var i=1;i<wrd.length;i++)
+		{
+				var c=wrd.charAt(i);
+				var d=wrd.charAt(i-1);
+        var e=wrd.charAt(i+1);
+		 
+        if((c>='a'&& c<='z')||(c>='A'&& c<='Z'))
+				{
+						if(d=='+' &&e=='+')
+							return true;
+						else
+						{
+							return false;
+						}
+				}	
+		}
+		
+  }
+}
+document.write(letterSurround(prompt("Enter string:")));
+  </script>
+</body>
+</html>

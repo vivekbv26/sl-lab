@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Change string
+        </title>
+</head>
+<body>
+    <script>
+        function letterchanges(str){
+            let alpha1= "abcdefghijklmnopqrstuvwxyz";
+            let alpha2 = "bcdEfghIjklmnOpqrstUvwxyzA"
+            a= str.split('').map((char,i)=>alpha2[alpha1.indexOf(char)]||char).join('');
+            document.write(a);
+            return a;
+
+        }
+        console.log(letterchanges(prompt("enter string")));
+    </script>
+</body>
+    
+</html>
+
+a= str.split('').map(char,i)=>alpha2[alpha1.indexOf(char)||]char).join('');
+a=str.split('').map((char,i)=alpha2[indexOf[alpha1]])
